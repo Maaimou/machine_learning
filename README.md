@@ -1,4 +1,4 @@
-### Prédiction de la Satisfaction des Passagers Aériens
+### Prédiction de la Satisfaction des Passagers d'Avion
 Contexte et Objectif
 Objectif : Prédire la satisfaction des passagers aériens.
 
@@ -19,8 +19,11 @@ Impact : Offrir des services personnalisés et optimiser l'expérience par segme
 Nous développons un modèle de machine learning pour classifier les passagers comme satisfaits ou insatisfaits en fonction de leurs caractéristiques démographiques et de leur évaluation des services de vol. Le jeu de données comprend 129 880 lignes et 25 colonnes, incluant :
 
 **Caractéristiques démographiques** : 'Sexe', 'type de client', 'âge', 'type de voyage', 'classe'.
+
 **Évaluations des services** : 'Wi-Fi en vol', 'confort du siège', 'divertissement',..., notés de 1 à 5.
+
 **Retards de vol** : 'Retards au départ et à l’arrivée'.
+
 **Cible** : 'Satisfaction' (satisfait ou non).
 
 ### Approche
