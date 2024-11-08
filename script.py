@@ -51,18 +51,6 @@ data['satisfaction'] = label_encoder.fit_transform(data['satisfaction'])
 #from sklearn.preprocessing import LabelEncoder
 numerical_cols = data.select_dtypes(include=['number']).columns
 df_numerical = data[numerical_cols] 
-
-#import mlflow
-#
-## Configurer l'URL du serveur MLflow
-#mlflow.set_tracking_uri("http://127.0.0.1:5000")
-#
-## Démarrer un nouveau run
-#with mlflow.start_run():
-#    mlflow.log_param("param", "value")
-#    mlflow.log_metric("accuracy", 0.95)
-#
-#print("Exécution du run MLflow terminée.")
                                                                                                                                                                                                                               
 ##########################################################################################################################
 ##########################################################################################################################
@@ -73,9 +61,9 @@ df_numerical = data[numerical_cols]
 data= data.dropna()
 label_encoder = LabelEncoder()
 data['satisfaction'] = label_encoder.fit_transform(data['satisfaction'])
-# Data preparation (modify based on your notebook)
+# Data preparation 
 # Assuming the last column is the target for demonstration; adjust as needed
-X = data.drop(columns=['satisfaction']) #'Unnamed: 0','id' 
+X = data.drop(columns=['satisfaction'])
 X_numeric = X.select_dtypes(include = ['number'])  # Caractéristiques
 y = data['satisfaction']   # Cible
 
