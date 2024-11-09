@@ -602,7 +602,7 @@ scaler = StandardScaler()
 X_scaled2 = scaler.fit_transform(X_numeric2)
 
 ####################################################
-print("Optuna + sélection des features")
+print("Optuna + sélection des features - Random Forest")
 # Diviser les données en ensemble d'entraînement et de test
 X_train, X_test, y_train, y_test = train_test_split(X_scaled2, y, test_size=0.2, random_state=42)
 
@@ -646,7 +646,8 @@ print("Best cross-validation accuracy: ", study.best_value)
   
 # Écrire l'accuracy dans un fichier
 with open('out/score.txt', 'w') as f:
-    f.write(f'Random Forest Accuracy on test set: {accuracy:.4f}')
+    f.write(f'Random Forest Accuracy on test set: {study.best_value:.4f}')
+    f.write(f"Best Hyperparameters Optuna Random forest: {study.best_params}\n")
 
 # Entraîner le modèle avec les meilleurs paramètres
 best_params = study.best_params
