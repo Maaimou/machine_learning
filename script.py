@@ -723,7 +723,6 @@ print("classification_rep",classification_rep)
 os.makedirs('out', exist_ok=True)  # Crée le dossier 'out' s'il n'existe pas
 with open('out/score.txt', 'w') as f:
     f.write(f'Accuracy on test set: {accuracy:.4f}\n')
-    f.write("Classification Report:\n")
     f.write(classification_rep)
 
 
