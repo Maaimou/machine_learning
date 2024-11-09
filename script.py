@@ -428,11 +428,11 @@ def plot_confusion_matrix(best_knn, X_test, y_test):
 
 
 fig1 = plot_param_importance(study)
-plt.show(fig1)
+plt.show()
 
 # Plot and display parameter distributions
 fig2 = plot_param_distributions(study)
-plt.show(fig2)
+plt.show()
 
 
 ####################################################   
@@ -532,10 +532,10 @@ plt.show()
    
 # Visualisation des paramètres Optuna
 fig1 = optuna.visualization.plot_param_importances(study)
-plt.show(fig1)
+plt.show()
    
 fig2 = optuna.visualization.plot_parallel_coordinate(study)
-plt.show(fig2)
+plt.show()
 
 # Visualisation de l'importance des hyperparamètres
 def plot_param_importance(study):
@@ -558,10 +558,10 @@ def plot_confusion_matrix(best_knn, X_test, y_test):
     plt.show()
  
 fig1 = plot_param_importance(study)
-plt.show(fig1)
+plt.show()
 # Plot and display parameter distributions
 fig2 = plot_param_distributions(study)
-plt.show(fig2)
+plt.show()
 
 ######################################################################################################################
 ######################################################################################################################
@@ -669,11 +669,11 @@ def plot_param_distributions(study):
 
 # Plot and display parameter importance
 fig1 = plot_param_importance(study)
-plt.show(fig1)
+plt.show()
 
 # Plot and display parameter distributions
 fig2 = plot_param_distributions(study)
-plt.show(fig2)
+plt.show()
 
 ######################################################################################################################
 ######################################################################################################################
