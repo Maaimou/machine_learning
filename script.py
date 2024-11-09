@@ -450,9 +450,6 @@ df_clean_satisfaction2['Type of Travel'] = label_encoder.fit_transform(df_clean_
 ordinal_encoder = OrdinalEncoder(categories=[['Eco', 'Eco Plus','Business']])  # Spécifiez l'ordre
 df_clean_satisfaction2['Class'] = ordinal_encoder.fit_transform(df_clean_satisfaction2[['Class']])
 
-# Afficher le DataFrame encodé
-print(df_clean_satisfaction2.head(5))
-
 type_of_travel_classes = label_encoder.classes_
 
 print("Mapping for 'Type of Travel':")
